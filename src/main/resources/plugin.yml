@@ -1,0 +1,28 @@
+name: YearnPlugin
+version: '1.0.0'  # Replace this with the actual version of your plugin
+main: me.zeeplockd.yearn.YearnPlugin
+api-version: '1.18'  # Replace this with the appropriate Spigot version you're targeting
+authors: [zeeplockd]
+description: Custom plugin for the Yearn server.
+website: zeeplockd.me
+
+commands:
+  setspawn:
+    description: Set the spawn location
+    permission: op
+  spawn:
+    description: Teleport to the spawn location
+  balance:
+    description: Check your balance
+    aliases: [bal]
+  givepickaxe:
+    description: Give a custom pickaxe to a player
+    permission: op
+  upgradepickaxe:
+    description: Upgrade your pickaxe (hold it)
+    aliases: [upgrade, upg, upgpick]
+
+permissions:
+  op:
+    description: Grants OP permissions
+    default: op
